@@ -1,0 +1,92 @@
+
+{"quizQuestions" : [
+    {
+      "id": 1,
+      "question": "Quelle est la plus grande planète du système solaire ?",
+      "options": [
+        "Mercure",
+        "Vénus",
+        "Mars",
+        "Jupiter"
+      ],
+      "correctAnswer": "Jupiter"
+    },
+    {
+      "id": 2,
+      "question": "Quelle planète est connue comme 'la planète rouge' en raison de sa couleur distinctive ?",
+      "options": [
+        "Jupiter",
+        "Neptune",
+        "Uranus",
+        "Mars"
+      ],
+      "correctAnswer": "Mars"
+    },
+    {
+      "id": 3,
+      "question": "Quelle planète est la plus proche du Soleil ?",
+      "options": [
+        "Saturne",
+        "Terre",
+        "Pluton",
+        "Mercure"
+      ],
+      "correctAnswer": "Mercure"
+    },
+    {
+      "id": 4,
+      "question": "Quel est le nom de la plus grande lune de Jupiter ?",
+      "options": [
+        "Titan",
+        "Ganymède",
+        "Io",
+        "Callisto"
+      ],
+      "correctAnswer": "Ganymède"
+    },
+    {
+      "id": 5,
+      "question": "Quelle planète possède des anneaux spectaculaires composés de milliards de petits morceaux de glace et de roche ?",
+      "options": [
+        "Saturne",
+        "Uranus",
+        "Neptune",
+        "Mars"
+      ],
+      "correctAnswer": "Saturne"
+    },
+    {
+      "id": 6,
+      "question": "Quelle planète est célèbre pour ses tempêtes massives et constantes, y compris la Grande Tache Rouge ?",
+      "options": [
+        "Saturne",
+        "Uranus",
+        "Mars",
+        "Jupiter"
+      ],
+      "correctAnswer": "Jupiter"
+    },
+    {
+      "id": 7,
+      "question": "Quelle planète est souvent appelée 'la sœur de la Terre' en raison de ses caractéristiques similaires ?",
+      "options": [
+        "Neptune",
+        "Vénus",
+        "Pluton",
+        "Mercure"
+      ],
+      "correctAnswer": "Vénus"
+    },
+    {
+      "id": 8,
+      "question": "Quelle planète possède un système d'anneaux constitué de particules de glace et de roche en orbite autour d'elle ?",
+      "options": [
+        "Mars",
+        "Vénus",
+        "Saturne",
+        "Uranus"
+      ],
+      "correctAnswer": "Saturne"
+    }
+  ]
+}
