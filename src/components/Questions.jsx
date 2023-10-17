@@ -6,6 +6,7 @@ const Questions = () => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
     const [selectedAnswer, setSelectedAnswer] = useState(null)
     const [answerValid, setAnswerValid] = useState(false)
+    const [goodAnswer, setGoodAnswer] = useState(0)
     const currentQuestion = quizQuestions.quizQuestions[currentQuestionIndex]
 
     const handleNextQuestion = () => {
@@ -13,8 +14,13 @@ const Questions = () => {
             setCurrentQuestionIndex(currentQuestionIndex + 1)
             setSelectedAnswer(null)
             setAnswerValid(false)
+        } if (selectedAnswer == currentQuestion.correctAnswer) {
+            // alert("Correct")
+                setGoodAnswer(goodAnswer + 1)
         }
-    }
+
+        }
+    
 
     const handleAnswerChange = (e) => {
         setSelectedAnswer(e.target.value)
@@ -62,9 +68,11 @@ const Questions = () => {
                 </label>
             </form>
 
-            <p>{currentQuestion.correctAnswer}</p>
+            {/* <p>{currentQuestion.correctAnswer}</p> */}
 
             <button onClick={handleNextQuestion} disabled={!answerValid}>Next</button>
+
+            <p>Nombre de bonne réponses : {goodAnswer}</p>
 
             
 
