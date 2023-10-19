@@ -29,10 +29,12 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount}) => {
   };
 
   return (
-    <div>
-      <h2>Questions {currentQuestionIndex + 1} :</h2>
+    <div className="questions">
+      <div className="questions-container">
+        <div className="current-question">
+      <h2>Questions {currentQuestionIndex + 1}/8</h2>
 
-      <p>{currentQuestion.question}</p>
+      <h3>{currentQuestion.question}</h3>
 
       <form>
         <label>
@@ -80,9 +82,10 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount}) => {
         onClick={handleNextQuestion}
         disabled={!answerValid}
       >
-        Next
+        Prochaine question
       </button>
-
+      </div>
+      </div>
     </div>
   );
 };
