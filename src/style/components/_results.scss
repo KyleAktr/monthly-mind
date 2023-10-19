@@ -1,0 +1,67 @@
+.results-container {
+    height: 100vh;
+
+    
+    & .results-card-container {
+        height: 100%;
+        
+        & h2 {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 15%;
+            font-size: 4rem;
+        }
+        
+        & .results-card {
+            @extend %center;
+            height: 60%;
+            
+            & .results {
+                @extend %center;
+                background: #9EC591;
+                border-radius: 25px;
+                width: 60%;
+                height: 80%;
+                
+                & .results-stats {
+                    align-items: center;
+                    
+                    & p {
+                        @extend %center;
+                        font-size: 1.5rem;
+                        margin-top: 10px;
+                    }
+                    
+                    & .congrats {
+                        margin-top: 30px;
+                    }
+                }
+                
+            }
+        }
+        
+        & .show-article {
+            height: 25%;
+            
+            & p {
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                font-size: 1.3rem;
+                
+            }
+            
+            & .arrow {
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                margin: 30px auto 0 auto;
+                border: 1px solid black;
+                padding: 5px 10px;
+                border-radius: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+}
