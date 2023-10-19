@@ -13,7 +13,7 @@ html {
   background: #D9D9D9;
 }
 
-.questions .questions-container .current-question button, .questions .questions-container .current-question form label, .questions .questions-container .current-question form, .questions .questions-container .current-question h3, .questions .questions-container .current-question h2, .questions .questions-container, .questions, .home .title-container button, .home .title-container h2, .home {
+.results-container .results-card-container .results-card .results .results-stats p, .results-container .results-card-container .results-card .results, .results-container .results-card-container .results-card, .questions .questions-container .current-question button, .questions .questions-container .current-question form label, .questions .questions-container .current-question form, .questions .questions-container .current-question h3, .questions .questions-container .current-question h2, .questions .questions-container, .questions, .home .title-container button, .home .title-container h2, .home {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,4 +93,56 @@ html {
   border: none;
   cursor: pointer;
   background: #D9D9D9;
+}
+
+.results-container {
+  height: 100vh;
+}
+.results-container .results-card-container {
+  height: 100%;
+}
+.results-container .results-card-container h2 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 15%;
+  font-size: 4rem;
+}
+.results-container .results-card-container .results-card {
+  height: 60%;
+}
+.results-container .results-card-container .results-card .results {
+  background: #9EC591;
+  border-radius: 25px;
+  width: 60%;
+  height: 80%;
+}
+.results-container .results-card-container .results-card .results .results-stats {
+  align-items: center;
+}
+.results-container .results-card-container .results-card .results .results-stats p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.results-container .results-card-container .results-card .results .results-stats .congrats {
+  margin-top: 30px;
+}
+.results-container .results-card-container .show-article {
+  height: 25%;
+}
+.results-container .results-card-container .show-article p {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-size: 1.3rem;
+}
+.results-container .results-card-container .show-article .arrow {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 0 auto;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 100%;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
