@@ -1,14 +1,14 @@
 %legend {
-    font-size: 1rem;
-    color: #272727;
-    font-style: italic;
+  font-size: 1rem;
+  color: #272727;
+  font-style: italic;
 }
 
 .article {
   // display: flex;
   // justify-content: center;
   width: 80%;
-//   min-height: 800vh;
+  //   min-height: 800vh;
   margin: 0 auto;
   padding-top: 100px;
 
@@ -25,8 +25,8 @@
     margin-bottom: 100px;
 
     & .article-intro-img {
-        display: flex;
-        justify-content: space-around;
+      display: flex;
+      justify-content: space-around;
     }
 
     & img {
@@ -37,7 +37,15 @@
     & p {
       padding: 30px 0;
     }
+  }
 
+  & .jupiter-img,
+  .venus-img,
+  .ganymede-earth-img,
+  .saturne-img {
+    & p {
+      @extend %legend;
+    }
   }
 
   & .article-content {
@@ -66,10 +74,7 @@
         grid-area: ji;
         margin-left: 80px;
         & img {
-            width: 600px;
-        }
-        & p {
-            @extend %legend
+          width: 600px;
         }
       }
 
@@ -77,10 +82,7 @@
         grid-area: vi;
         width: 600px;
         & img {
-            width: 600px;
-        }
-        & p {
-            @extend %legend
+          width: 600px;
         }
       }
       & .article-venus {
@@ -97,28 +99,17 @@
       grid-auto-rows: minmax(auto, 1fr);
       grid-template-areas:
         "ag gi"
-        // "gi gi"
         "si as"
-        // "si si"
         "ac ac";
 
       & .article-ganymede {
         grid-area: ag;
         width: 110%;
-        // height: 250px;
       }
-      // & .ganymede-img-container {
-      //   width: 100%;
-      //   display: flex;
-      //   justify-content: space-around;
-      //   & .ganymede-img {
-      //     height: 305px;
-      //   }
-        & .ganymede-earth-img {
-          grid-area: gi;
-          padding-left: 100px;
-          height: 305px;
-        // }
+      & .ganymede-earth-img {
+        grid-area: gi;
+        padding-left: 100px;
+        height: 305px;
       }
       & .article-saturne {
         grid-area: as;
@@ -127,7 +118,9 @@
       & .saturne-img {
         grid-area: si;
         padding-top: 50px;
-        width: 600px;
+        & img {
+          width: 600px;
+        }
       }
       & .article-conclusion {
         grid-area: ac;
