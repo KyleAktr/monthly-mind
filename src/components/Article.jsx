@@ -39,7 +39,7 @@ const Article = () => {
                 une destination incontournable, avec sa célèbre Grande Tache
                 Rouge. Juste pour préciser, sa tache rouge est égal à la
                 circonférence de la Terre.
-                <br />
+                <br /> <br />
                 Mars, la "planète rouge," est un autre point de mire, offrant un
                 paysage accidenté.
               </p>
@@ -78,18 +78,18 @@ const Article = () => {
                 une destination d'exploration essentielle pour les chercheurs
                 spatiaux.
               </p>
-              <div className="ganymede-img-container">
-                <img
+              {/* <div className="ganymede-img-container"> */}
+                {/* <img
                   className="ganymede-img"
                   src={Ganymede}
                   alt="image de Ganymede"
-                />
+                /> */}
                 <img
                   className="ganymede-earth-img"
                   src={GanymedeMoons}
                   alt="image de Ganymede, de la terre et de sa lune"
                 />
-              </div>
+              {/* </div> */}
               <p className="article-saturne">
                 Saturne, avec son système d'anneaux spectaculaires composés de
                 milliards de particules de glace et de roche, nous offre un
@@ -103,10 +103,9 @@ const Article = () => {
                 alt="image de Saturne"
               />
               <p className="article-conclusion">
-                Notre système solaire est un univers riche en diversité, prêt à
-                révéler ses secrets au chercheur de trésors célestes. Ça donne
-                envie de s'y intéresser, non ?
-              </p>
+              Notre voyage nous a menés sur des planètes géantes telles que Jupiter, avec sa Grande Tache Rouge, Mars, la mystérieuse "planète rouge," et Vénus, notre fascinante "sœur de la Terre." Nous avons exploré les merveilles de Ganymède, la plus grande lune du système solaire, et les anneaux magnifiques de Saturne. Ces destinations ont révélé une multitude de secrets et de beautés, de la géologie complexe de Ganymède à la majesté des anneaux de Saturne.
+              <br /> <br />
+Mais notre système solaire est encore rempli de mystères à dévoiler. Des lunes inexplorées aux profondeurs de l'espace, l’exploration continue ! Ça donne envie de s'y intéresser, non ? 🚀🌌🪐</p>
             </div>
           </div>
         </div>
