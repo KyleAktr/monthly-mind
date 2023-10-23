@@ -150,7 +150,10 @@ html {
   cursor: pointer;
 }
 
-.article .article-content .article-content-1 .venus-img p, .article .article-content .article-content-1 .jupiter-img p {
+.article .jupiter-img p,
+.article .venus-img p,
+.article .ganymede-earth-img p,
+.article .saturne-img p {
   font-size: 1rem;
   color: #272727;
   font-style: italic;
@@ -241,6 +244,8 @@ html {
 .article .article-content .article-content-2 .saturne-img {
   grid-area: si;
   padding-top: 50px;
+}
+.article .article-content .article-content-2 .saturne-img img {
   width: 600px;
 }
 .article .article-content .article-content-2 .article-conclusion {
