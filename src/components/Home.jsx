@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-scroll'
 
 const Home = () => {
     return (
@@ -6,7 +7,9 @@ const Home = () => {
             <div className="title-container">
                 <h1>Monthly Mind</h1>
                 <h2>Balade à Vaisseau</h2>
-                <button>Commencer</button>
+                <button>
+                    <Link to="questions" spy={true} smooth={true} offset={50} duration={500}>Commencer</Link>
+                </button>
             </div>
         </div>
     );

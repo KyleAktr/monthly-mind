@@ -13,7 +13,7 @@ html {
   background: #D9D9D9;
 }
 
-.results-container .results-card-container .results-card .results .results-stats p, .results-container .results-card-container .results-card .results, .results-container .results-card-container .results-card, .questions .questions-container .current-question button, .questions .questions-container .current-question form label, .questions .questions-container .current-question form, .questions .questions-container .current-question h3, .questions .questions-container .current-question h2, .questions .questions-container, .questions, .home .title-container button, .home .title-container h2, .home {
+.suggestions button, .suggestions input, .suggestions p, .suggestions h2, .results-container .results-card-container .results-card .results .results-stats p, .results-container .results-card-container .results-card .results, .results-container .results-card-container .results-card, .questions .questions-container .current-question button, .questions .questions-container .current-question form label, .questions .questions-container .current-question form, .questions .questions-container .current-question h3, .questions .questions-container .current-question h2, .questions .questions-container, .questions, .home .title-container button, .home .title-container h2, .home {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +22,7 @@ html {
 
 .home {
   height: 100vh;
+  overflow: hidden;
 }
 .home .title-container {
   color: #222222;
@@ -46,6 +47,7 @@ html {
 
 .questions {
   height: 100vh;
+  overflow: hidden;
 }
 .questions .questions-container {
   color: #222222;
@@ -96,7 +98,7 @@ html {
 }
 
 .results-container {
-  height: 100vh;
+  height: 110vh;
 }
 .results-container .results-card-container {
   height: 100%;
@@ -105,11 +107,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: end;
-  height: 15%;
+  height: 20%;
   font-size: 4rem;
 }
 .results-container .results-card-container .results-card {
-  height: 60%;
+  height: 50%;
 }
 .results-container .results-card-container .results-card .results {
   background: #9EC591;
@@ -135,6 +137,7 @@ html {
   justify-content: center;
   align-items: start;
   font-size: 1.3rem;
+  margin-top: 20px;
 }
 .results-container .results-card-container .show-article .arrow {
   width: 50px;
@@ -145,4 +148,139 @@ html {
   padding: 5px 10px;
   border-radius: 100%;
   cursor: pointer;
+}
+
+.article .article-content .article-content-1 .venus-img p, .article .article-content .article-content-1 .jupiter-img p {
+  font-size: 1rem;
+  color: #272727;
+  font-style: italic;
+}
+
+.article {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.article h2 {
+  font-size: 4.5rem;
+}
+.article p {
+  font-size: 2rem;
+  color: #585858;
+}
+.article .article-intro .article-intro-img {
+  display: flex;
+  justify-content: space-around;
+}
+.article .article-intro img {
+  margin-top: 30px;
+  height: 352px;
+}
+.article .article-content h3 {
+  font-size: 4rem;
+  margin-top: 50px;
+}
+.article .article-content .article-content-1 {
+  margin-top: 90px;
+  display: grid;
+  gap: 20px;
+  row-gap: 80px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "aj ji" "vi av";
+}
+.article .article-content .article-content-1 .article-jupiter {
+  grid-area: aj;
+}
+.article .article-content .article-content-1 .jupiter-img {
+  grid-area: ji;
+  margin-left: 80px;
+}
+.article .article-content .article-content-1 .jupiter-img img {
+  width: 600px;
+}
+.article .article-content .article-content-1 .venus-img {
+  grid-area: vi;
+  width: 600px;
+}
+.article .article-content .article-content-1 .venus-img img {
+  width: 600px;
+}
+.article .article-content .article-content-1 .article-venus {
+  grid-area: av;
+}
+.article .article-content .article-content-2 {
+  margin-top: 50px;
+  display: grid;
+  height: auto;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(auto, 1fr);
+  grid-template-areas: "ag ag" "gi gi" "as as" "si si" "ac ac";
+}
+.article .article-content .article-content-2 .article-ganymede {
+  grid-area: ag;
+  height: 250px;
+}
+.article .article-content .article-content-2 .ganymede-img-container {
+  grid-area: gi;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.article .article-content .article-content-2 .ganymede-img-container .ganymede-img {
+  height: 305px;
+}
+.article .article-content .article-content-2 .ganymede-img-container .ganymede-earth-img {
+  height: 305px;
+}
+.article .article-content .article-content-2 .article-saturne {
+  grid-area: as;
+}
+.article .article-content .article-content-2 .saturne-img {
+  grid-area: si;
+  width: 600px;
+}
+.article .article-content .article-content-2 .article-conclusion {
+  grid-area: ac;
+  height: 200px;
+}
+
+.suggestions {
+  height: 90vh;
+}
+.suggestions h2 {
+  margin-top: 150px;
+  font-size: 4.5rem;
+  margin-bottom: 50px;
+}
+.suggestions p {
+  text-align: center;
+  font-size: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  color: #585858;
+}
+.suggestions input {
+  margin-top: 50px;
+  width: 800px;
+  height: 40px;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1 px solid black;
+}
+.suggestions button {
+  margin-top: 50px;
+  width: 300px;
+  height: 60px;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  color: #909090;
+  background: #222222;
+}
+.suggestions button:hover {
+  color: #222222;
+  background: #909090;
 }/*# sourceMappingURL=index.css.map */

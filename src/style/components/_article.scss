@@ -1,0 +1,128 @@
+%legend {
+    font-size: 1rem;
+    color: #272727;
+    font-style: italic;
+}
+
+.article {
+  // display: flex;
+  // justify-content: center;
+  width: 80%;
+//   min-height: 800vh;
+  margin: 0 auto;
+  padding-top: 100px;
+
+  & h2 {
+    font-size: 4.5rem;
+  }
+
+  & p {
+    font-size: 2rem;
+    color: #585858;
+  }
+
+  & .article-intro {
+
+    & .article-intro-img {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    & img {
+      margin-top: 30px;
+      height: 352px;
+    }
+
+  }
+
+  & .article-content {
+    & h3 {
+      font-size: 4rem;
+      margin-top: 50px;
+    }
+
+    & .article-content-1 {
+      margin-top: 90px;
+      display: grid;
+      gap: 20px;
+      row-gap: 80px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:
+        "aj ji"
+        "vi av";
+
+      & .article-jupiter {
+        grid-area: aj;
+      }
+
+      & .jupiter-img {
+        grid-area: ji;
+        margin-left: 80px;
+        & img {
+            width: 600px;
+        }
+        & p {
+            @extend %legend
+        }
+      }
+
+      & .venus-img {
+        grid-area: vi;
+        width: 600px;
+        & img {
+            width: 600px;
+        }
+        & p {
+            @extend %legend
+        }
+      }
+      & .article-venus {
+        grid-area: av;
+      }
+    }
+
+    & .article-content-2 {
+      margin-top: 50px;
+      display: grid;
+      height: auto;
+      gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: minmax(auto, 1fr);
+      grid-template-areas:
+        "ag ag"
+        "gi gi"
+        "as as"
+        "si si"
+        "ac ac";
+
+      & .article-ganymede {
+        grid-area: ag;
+        height: 250px;
+      }
+      & .ganymede-img-container {
+        grid-area: gi;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        & .ganymede-img {
+          height: 305px;
+        }
+        & .ganymede-earth-img {
+          height: 305px;
+        }
+      }
+      & .article-saturne {
+        grid-area: as;
+      }
+      & .saturne-img {
+        grid-area: si;
+        width: 600px;
+      }
+      & .article-conclusion {
+        grid-area: ac;
+        height: 200px;
+      }
+    }
+  }
+}

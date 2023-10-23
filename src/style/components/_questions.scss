@@ -1,6 +1,7 @@
 .questions {
     height: 100vh;
     @extend %center;
+    overflow: hidden;
     
     & .questions-container {
         @extend %center;
