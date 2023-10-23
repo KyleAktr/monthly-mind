@@ -1,5 +1,6 @@
 import React from "react";
 import Arrow from "../style/assets/img/arrow-down-solid.svg"
+import { Link } from "react-scroll";
 
 const Results = ({ goodAnswerCount }) => {
   const percentGoodAnswer = (goodAnswerCount / 8) * 100;
@@ -19,7 +20,9 @@ const Results = ({ goodAnswerCount }) => {
         </div>
         <div className="show-article">
             <p>Retrouve toutes les réponses dans l’article ci dessous </p>
-            <img className="arrow" src={Arrow} alt="" />
+            <Link to="article" spy={true} smooth={true} offset={50} duration={500}>
+            <img className="arrow" src={Arrow} alt=""/>
+            </Link>
         </div>
       </div>
     </div>
