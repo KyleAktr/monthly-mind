@@ -8,9 +8,13 @@ const App = () => {
   const [goodAnswerCount, setGoodAnswerCount] = useState(0);
   const [displayNone, setDisplayNone] = useState(false);
 
+  const scrollNone = document.querySelector(".scroll-none");
+
   useEffect(() => {
     if (displayNone) {
       document.body.style.overflow = "auto";
+      scrollNone.style.display = "none";
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       document.body.style.overflow = "hidden";
     }

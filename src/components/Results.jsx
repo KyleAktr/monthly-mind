@@ -40,7 +40,7 @@ const Results = ({ goodAnswerCount, setDisplayNone }) => {
           <p>Retrouve toutes les réponses dans l’article ci dessous </p>
           <Link
             onClick={IsVisible}
-            to="article"
+            // to="article"
             spy={true}
             smooth={true}
             offset={50}
