@@ -20,6 +20,11 @@ html {
   margin: 0 auto;
 }
 
+.scroll-none {
+  overflow: hidden;
+  background: aqua;
+}
+
 .home {
   height: 100vh;
   overflow: hidden;
