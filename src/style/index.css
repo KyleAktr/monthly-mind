@@ -22,7 +22,6 @@ html {
 
 .scroll-none {
   overflow: hidden;
-  background: aqua;
 }
 
 .home {
@@ -152,6 +151,10 @@ html {
   padding: 5px 10px;
   border-radius: 100%;
   cursor: pointer;
+  transition: transform 1.3s;
+}
+.results-container .results-card-container .show-article .arrow:hover {
+  transform: rotate(180deg);
 }
 
 .article .jupiter-img p,
@@ -262,7 +265,7 @@ html {
 }
 
 .suggestions {
-  height: 90vh;
+  height: 70vh;
 }
 .suggestions h2 {
   margin-top: 150px;
