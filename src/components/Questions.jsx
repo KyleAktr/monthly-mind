@@ -16,22 +16,14 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
       setAnswerValid(false);
     }
     if (selectedAnswer == currentQuestion.correctAnswer) {
-      // alert("Correct")
       setGoodAnswerCount(goodAnswerCount + 1);
     }
-    // if (currentQuestionIndex === quizQuestions.quizQuestions.length - 2) {
-    //   document.querySelector(".next-btn").innerHTML = "Terminer le quiz";
-    // }
   };
 
   const handleAnswerChange = (e) => {
     setSelectedAnswer(e.target.value);
     setAnswerValid(true);
   };
-
-  // const handleFinishQuiz = () => {
-  //   Link.scrollTo("article", { smooth: true, duration: 500 });
-  // }
 
   return (
     <div className="questions">
@@ -81,11 +73,7 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
           </form>
 
           {currentQuestionIndex === quizQuestions.quizQuestions.length - 1 ? (
-            <button
-              className="next-btn"
-              // onClick={handleFinishQuiz}
-              disabled={!answerValid}
-            >
+            <button className="next-btn" disabled={!answerValid}>
               <Link
                 to="results-container"
                 spy={true}
