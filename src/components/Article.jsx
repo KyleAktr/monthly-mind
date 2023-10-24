@@ -2,7 +2,6 @@ import React from "react";
 import Galaxy from "../style/assets/img/galaxy.webp";
 import Jupiter from "../style/assets/img/jupiter.webp";
 import Venus from "../style/assets/img/venus.webp";
-import Ganymede from "../style/assets/img/Ganymede.webp";
 import GanymedeMoons from "../style/assets/img/Ganymede_moons.webp";
 import Saturne from "../style/assets/img/Saturne.webp";
 import Spaceman from "../style/assets/img/spaceman.webp";
@@ -10,7 +9,7 @@ import Suggestions from "./Suggestions";
 
 const Article = () => {
   return (
-    <div>
+    <div className="article-page">
       <div className="article">
         <div className="article-container">
           <div className="article-title">

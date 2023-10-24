@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Arrow from "../style/assets/img/arrow-down-solid.svg"
 import { Link } from "react-scroll";
 
-const Results = ({ goodAnswerCount }) => {
+const Results = ({ goodAnswerCount}) => {
   const percentGoodAnswer = (goodAnswerCount / 8) * 100;
   const [resultsBackground, setResultsBackground] = useState('#9EC591')
   const [congratsText, setCongratsText] = useState("Bravo ! 🤓")
@@ -17,6 +17,8 @@ const Results = ({ goodAnswerCount }) => {
     }
 
   }, [goodAnswerCount])
+
+  
 
 
   return (

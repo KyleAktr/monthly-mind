@@ -158,6 +158,10 @@ html {
   font-style: italic;
 }
 
+.article-page {
+  position: relative;
+}
+
 .article {
   width: 80%;
   margin: 0 auto;
