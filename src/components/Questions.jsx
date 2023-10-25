@@ -34,7 +34,13 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
           <h3>{currentQuestion.question}</h3>
 
           <form>
-            <label>
+            <label
+            className={`${
+              selectedAnswer === currentQuestion.options[0]
+                ? "label-checked"
+                : "label"
+            }`} 
+            >
               <input
                 type="radio"
                 value={currentQuestion.options[0]}
@@ -43,7 +49,13 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
               />
               {currentQuestion.options[0]}
             </label>
-            <label>
+            <label
+            className={`${
+              selectedAnswer === currentQuestion.options[1]
+                ? "label-checked"
+                : "label"
+            }`} 
+            >
               <input
                 type="radio"
                 value={currentQuestion.options[1]}
@@ -52,7 +64,13 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
               />
               {currentQuestion.options[1]}
             </label>
-            <label>
+            <label
+            className={`${
+              selectedAnswer === currentQuestion.options[2]
+                ? "label-checked"
+                : "label"
+            }`} 
+            >
               <input
                 type="radio"
                 value={currentQuestion.options[2]}
@@ -61,7 +79,13 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
               />
               {currentQuestion.options[2]}
             </label>
-            <label>
+            <label
+            className={`${
+              selectedAnswer === currentQuestion.options[3]
+                ? "label-checked"
+                : "label"
+            }`} 
+            >
               <input
                 type="radio"
                 value={currentQuestion.options[3]}

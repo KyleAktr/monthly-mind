@@ -32,7 +32,7 @@
             & form {
                 @extend %center;
                 
-                & label {
+                & .label {
                     @extend %center;                    
                     width: 110px;
                     margin: 40px 40px 20px 40px;
@@ -44,14 +44,25 @@
                     & input {
                         appearance: none;
                     }
-                    // & input[type="radio"]:checked {
-                    //     color: blue;
-                    //     background: red;          
-                    // }
                 }
                 & label:hover {
                     color: #D9D9D9;
                     background: #222222;
+                }
+                
+                & .label-checked {
+                    @extend %center;                    
+                    width: 110px;
+                    margin: 40px 40px 20px 40px;
+                    padding: 10px;
+                    border-radius: 25px;
+                    color: #D9D9D9;
+                    background: #222222;
+                    cursor: pointer;
+                    
+                    & input {
+                        appearance: none;
+                    }
                 }
             }
             
