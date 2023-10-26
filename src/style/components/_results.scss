@@ -7,11 +7,12 @@
         height: 100%;
         
         & h2 {
+            margin-top: 50px;
             display: flex;
             justify-content: center;
             align-items: end;
             height: 20%;
-            font-size: 4rem;
+            font-size: 3.5rem;
             // margin-top: 30px;
         }
         
@@ -30,8 +31,9 @@
                     
                     & p {
                         @extend %center;
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
                         margin-top: 10px;
+                        letter-spacing: 1px;
                     }
                     
                     & .congrats {
@@ -51,6 +53,7 @@
                 align-items: start;
                 font-size: 1.3rem;
                 margin-top: 20px;
+                letter-spacing: 1px;
                 
             }
             

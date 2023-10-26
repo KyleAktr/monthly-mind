@@ -9,18 +9,18 @@
         
         
         & h1 {
-            font-size: 7rem;
+            font-size: 5.5rem;
         }
         
         & h2 {
             @extend %center;
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin-top: 10px;
         }
         
         & button {
             @extend %center;
-            font-size: 2rem;
+            font-size: 1.5rem;
             margin-top: 25px;
             padding: 10px 20px;
             color: #D9D9D9;

@@ -14,11 +14,11 @@
   padding-top: 100px;
 
   & h2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   & p {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #585858;
   }
 
@@ -32,7 +32,7 @@
 
     & img {
       margin-top: 30px;
-      height: 352px;
+      height: 252px;
     }
 
     & p {
@@ -51,7 +51,7 @@
 
   & .article-content {
     & h3 {
-      font-size: 4rem;
+      font-size: 3.5rem;
       margin-top: 50px;
     }
 
@@ -75,7 +75,7 @@
         grid-area: ji;
         margin-left: 80px;
         & img {
-          width: 600px;
+          width: 450px;
         }
       }
 
@@ -83,7 +83,7 @@
         grid-area: vi;
         width: 600px;
         & img {
-          width: 600px;
+          width: 450px;
         }
       }
       & .article-venus {

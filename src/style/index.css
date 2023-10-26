@@ -32,14 +32,14 @@ html {
   color: #222222;
 }
 .home .title-container h1 {
-  font-size: 7rem;
+  font-size: 5.5rem;
 }
 .home .title-container h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-top: 10px;
 }
 .home .title-container button {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 25px;
   padding: 10px 20px;
   color: #D9D9D9;
@@ -61,17 +61,18 @@ html {
   border-radius: 25px;
 }
 .questions .questions-container .current-question {
-  padding: 0 50px;
+  padding: 0 100px;
 }
 .questions .questions-container .current-question h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 .questions .questions-container .current-question h3 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 .questions .questions-container .current-question form .label {
   width: 110px;
@@ -80,6 +81,8 @@ html {
   border-radius: 25px;
   background: #D9D9D9;
   cursor: pointer;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 .questions .questions-container .current-question form .label input {
   -webkit-appearance: none;
@@ -98,6 +101,8 @@ html {
   color: #D9D9D9;
   background: #222222;
   cursor: pointer;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 .questions .questions-container .current-question form .label-checked input {
   -webkit-appearance: none;
@@ -122,11 +127,12 @@ html {
   height: 100%;
 }
 .results-container .results-card-container h2 {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: end;
   height: 20%;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .results-container .results-card-container .results-card {
   height: 50%;
@@ -140,8 +146,9 @@ html {
   align-items: center;
 }
 .results-container .results-card-container .results-card .results .results-stats p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 10px;
+  letter-spacing: 1px;
 }
 .results-container .results-card-container .results-card .results .results-stats .congrats {
   margin-top: 30px;
@@ -155,6 +162,7 @@ html {
   align-items: start;
   font-size: 1.3rem;
   margin-top: 20px;
+  letter-spacing: 1px;
 }
 .results-container .results-card-container .show-article .arrow {
   width: 50px;
@@ -190,10 +198,10 @@ html {
   padding-top: 100px;
 }
 .article h2 {
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 .article p {
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: #585858;
 }
 .article .article-intro {
@@ -205,13 +213,13 @@ html {
 }
 .article .article-intro img {
   margin-top: 30px;
-  height: 352px;
+  height: 252px;
 }
 .article .article-intro p {
   padding: 30px 0;
 }
 .article .article-content h3 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin-top: 50px;
 }
 .article .article-content .article-content-1 {
@@ -232,14 +240,14 @@ html {
   margin-left: 80px;
 }
 .article .article-content .article-content-1 .jupiter-img img {
-  width: 600px;
+  width: 450px;
 }
 .article .article-content .article-content-1 .venus-img {
   grid-area: vi;
   width: 600px;
 }
 .article .article-content .article-content-1 .venus-img img {
-  width: 600px;
+  width: 450px;
 }
 .article .article-content .article-content-1 .article-venus {
   grid-area: av;
@@ -283,36 +291,34 @@ html {
 }
 .suggestions h2 {
   margin-top: 150px;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   margin-bottom: 50px;
 }
 .suggestions p {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.3rem;
   width: 50%;
   margin: 0 auto;
   color: #585858;
+  letter-spacing: 1px;
 }
 .suggestions input {
   margin-top: 50px;
-  width: 800px;
-  height: 50px;
-  font-size: 1.5rem;
+  width: 700px;
+  height: 40px;
+  font-size: 1rem;
   text-align: center;
   border: 1 px solid black;
+  letter-spacing: 1px;
 }
 .suggestions button {
   margin-top: 50px;
-  width: 300px;
-  height: 60px;
-  font-size: 1.5rem;
+  width: 200px;
+  height: 50px;
+  font-size: 1.3rem;
   border-radius: 25px;
   border: none;
   cursor: pointer;
   color: #909090;
   background: #222222;
-}
-.suggestions button:hover {
-  color: #222222;
-  background: #909090;
 }/*# sourceMappingURL=index.css.map */
