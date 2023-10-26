@@ -20,6 +20,12 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
     }
   };
 
+  const handleLastQuestion = () => {
+    if (selectedAnswer == currentQuestion.correctAnswer) {
+      setGoodAnswerCount(goodAnswerCount + 1);
+    }
+  };
+
   const handleAnswerChange = (e) => {
     setSelectedAnswer(e.target.value);
     setAnswerValid(true);
@@ -35,11 +41,11 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
 
           <form>
             <label
-            className={`${
-              selectedAnswer === currentQuestion.options[0]
-                ? "label-checked"
-                : "label"
-            }`} 
+              className={`${
+                selectedAnswer === currentQuestion.options[0]
+                  ? "label-checked"
+                  : "label"
+              }`}
             >
               <input
                 type="radio"
@@ -50,11 +56,11 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
               {currentQuestion.options[0]}
             </label>
             <label
-            className={`${
-              selectedAnswer === currentQuestion.options[1]
-                ? "label-checked"
-                : "label"
-            }`} 
+              className={`${
+                selectedAnswer === currentQuestion.options[1]
+                  ? "label-checked"
+                  : "label"
+              }`}
             >
               <input
                 type="radio"
@@ -65,11 +71,11 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
               {currentQuestion.options[1]}
             </label>
             <label
-            className={`${
-              selectedAnswer === currentQuestion.options[2]
-                ? "label-checked"
-                : "label"
-            }`} 
+              className={`${
+                selectedAnswer === currentQuestion.options[2]
+                  ? "label-checked"
+                  : "label"
+              }`}
             >
               <input
                 type="radio"
@@ -80,11 +86,11 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
               {currentQuestion.options[2]}
             </label>
             <label
-            className={`${
-              selectedAnswer === currentQuestion.options[3]
-                ? "label-checked"
-                : "label"
-            }`} 
+              className={`${
+                selectedAnswer === currentQuestion.options[3]
+                  ? "label-checked"
+                  : "label"
+              }`}
             >
               <input
                 type="radio"
@@ -97,7 +103,11 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
           </form>
 
           {currentQuestionIndex === quizQuestions.quizQuestions.length - 1 ? (
-            <button className="next-btn" disabled={!answerValid}>
+            <button
+              className="next-btn"
+              onClick={handleLastQuestion}
+              disabled={!answerValid}
+            >
               <Link
                 to="results-container"
                 spy={true}
