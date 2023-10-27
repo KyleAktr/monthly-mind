@@ -2,6 +2,10 @@
     height: 100vh;
     @extend %center;
     overflow: hidden;
+
+    @media screen and (max-width: 720px){
+        height: 110vh;
+    }
     
     & .questions-container {
         @extend %center;
@@ -10,9 +14,17 @@
         background: #8F8EBB;
         height: 50%;
         border-radius: 25px;
+
+        @media screen and (max-width: 720px){
+            height: 580px;
+        }
         
         & .current-question {
             padding: 0 100px;
+
+            @media screen and (max-width: 720px){
+                height: 100%;
+            }
 
             
             & h2 {
@@ -21,17 +33,41 @@
                 display: flex;
                 justify-content: center;
                 margin-bottom: 20px;
+
+                @media screen and (max-width: 720px){
+                    margin-bottom: 50px;
+                    margin-top: 50px;
+                }
+            }
+
+            & .current-question-container {
+                height: 70px;
+                display: flex;
+
+                @media screen and (max-width: 720px){
+                    height: 150px;
+                }
             }
             
             & h3 {
                 @extend %center;
                 text-align: center;
                 font-size: 1.5rem;
-                letter-spacing: 1px
+                letter-spacing: 1px;
+
+                // @media screen and (max-width: 720px){
+                //     width: 50%;
+                // }
             }
             
             & form {
                 @extend %center;
+
+                @media screen and (max-width: 720px){
+                    display: wrap;
+                    flex-wrap: wrap;
+                    width: 300px;
+                }
                 
                 & .label {
                     @extend %center;                    
@@ -43,6 +79,12 @@
                     cursor: pointer;
                     font-size: 0.8rem;
                     letter-spacing: 1px;
+
+                    @media screen and (max-width: 720px){
+                        width: 35%;
+                        box-sizing: border-box;
+                        margin: 40px 20px 20px 20px;
+                    }
 
                     & input {
                         appearance: none;
@@ -64,6 +106,12 @@
                     cursor: pointer;
                     font-size: 0.8rem;
                     letter-spacing: 1px;
+
+                    @media screen and (max-width: 720px){
+                        width: 35%;
+                        box-sizing: border-box;
+                        margin: 40px 20px 20px 20px;
+                    }
                     
                     & input {
                         appearance: none;

@@ -10,12 +10,21 @@
         
         & h1 {
             font-size: 5.5rem;
+
+            @media screen and (max-width: 720px){
+                font-size: 4rem;
+                text-align: center;
+            }
         }
         
         & h2 {
             @extend %center;
             font-size: 3rem;
             margin-top: 10px;
+
+            @media screen and (max-width: 720px){
+                font-size: 2rem;
+            }
         }
         
         & button {
@@ -28,6 +37,10 @@
             cursor: pointer;
             border: none;
             border-radius: 25px;
+
+            @media screen and (max-width: 720px){
+                font-size: 1rem;
+            }
         }
     }
 }
