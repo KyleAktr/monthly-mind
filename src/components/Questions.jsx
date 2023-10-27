@@ -37,7 +37,9 @@ const Questions = ({ goodAnswerCount, setGoodAnswerCount }) => {
         <div className="current-question">
           <h2>Questions {currentQuestionIndex + 1}/8</h2>
 
-          <h3>{currentQuestion.question}</h3>
+          <div className="current-question-container">
+            <h3>{currentQuestion.question}</h3>
+          </div>
 
           <form>
             <label

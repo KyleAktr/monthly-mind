@@ -34,9 +34,20 @@ html {
 .home .title-container h1 {
   font-size: 5.5rem;
 }
+@media screen and (max-width: 720px) {
+  .home .title-container h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
 .home .title-container h2 {
   font-size: 3rem;
   margin-top: 10px;
+}
+@media screen and (max-width: 720px) {
+  .home .title-container h2 {
+    font-size: 2rem;
+  }
 }
 .home .title-container button {
   font-size: 1.5rem;
@@ -48,10 +59,20 @@ html {
   border: none;
   border-radius: 25px;
 }
+@media screen and (max-width: 720px) {
+  .home .title-container button {
+    font-size: 1rem;
+  }
+}
 
 .questions {
   height: 100vh;
   overflow: hidden;
+}
+@media screen and (max-width: 720px) {
+  .questions {
+    height: 110vh;
+  }
 }
 .questions .questions-container {
   color: #222222;
@@ -60,8 +81,18 @@ html {
   height: 50%;
   border-radius: 25px;
 }
+@media screen and (max-width: 720px) {
+  .questions .questions-container {
+    height: 580px;
+  }
+}
 .questions .questions-container .current-question {
   padding: 0 100px;
+}
+@media screen and (max-width: 720px) {
+  .questions .questions-container .current-question {
+    height: 100%;
+  }
 }
 .questions .questions-container .current-question h2 {
   font-size: 1.2rem;
@@ -69,10 +100,32 @@ html {
   justify-content: center;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 720px) {
+  .questions .questions-container .current-question h2 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+}
+.questions .questions-container .current-question .current-question-container {
+  height: 70px;
+  display: flex;
+}
+@media screen and (max-width: 720px) {
+  .questions .questions-container .current-question .current-question-container {
+    height: 150px;
+  }
+}
 .questions .questions-container .current-question h3 {
   text-align: center;
   font-size: 1.5rem;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 720px) {
+  .questions .questions-container .current-question form {
+    display: wrap;
+    flex-wrap: wrap;
+    width: 300px;
+  }
 }
 .questions .questions-container .current-question form .label {
   width: 110px;
@@ -83,6 +136,13 @@ html {
   cursor: pointer;
   font-size: 0.8rem;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 720px) {
+  .questions .questions-container .current-question form .label {
+    width: 35%;
+    box-sizing: border-box;
+    margin: 40px 20px 20px 20px;
+  }
 }
 .questions .questions-container .current-question form .label input {
   -webkit-appearance: none;
@@ -103,6 +163,13 @@ html {
   cursor: pointer;
   font-size: 0.8rem;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 720px) {
+  .questions .questions-container .current-question form .label-checked {
+    width: 35%;
+    box-sizing: border-box;
+    margin: 40px 20px 20px 20px;
+  }
 }
 .questions .questions-container .current-question form .label-checked input {
   -webkit-appearance: none;
