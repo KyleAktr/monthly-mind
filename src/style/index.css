@@ -209,6 +209,11 @@ html {
   width: 60%;
   height: 80%;
 }
+@media screen and (max-width: 720px) {
+  .results-container .results-card-container .results-card .results {
+    width: 85%;
+  }
+}
 .results-container .results-card-container .results-card .results .results-stats {
   align-items: center;
 }
@@ -220,6 +225,12 @@ html {
 .results-container .results-card-container .results-card .results .results-stats .congrats {
   margin-top: 30px;
 }
+@media screen and (max-width: 720px) {
+  .results-container .results-card-container .results-card .results .results-stats .congrats {
+    text-align: center;
+    width: 80%;
+  }
+}
 .results-container .results-card-container .show-article {
   height: 25%;
 }
@@ -230,6 +241,11 @@ html {
   font-size: 1.3rem;
   margin-top: 20px;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 720px) {
+  .results-container .results-card-container .show-article p {
+    text-align: center;
+  }
 }
 .results-container .results-card-container .show-article .arrow {
   width: 50px;
@@ -266,6 +282,11 @@ html {
 }
 .article h2 {
   font-size: 4rem;
+}
+@media screen and (max-width: 720px) {
+  .article h2 {
+    font-size: 2rem;
+  }
 }
 .article p {
   font-size: 1.3rem;
