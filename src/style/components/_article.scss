@@ -19,26 +19,45 @@
     @media screen and (max-width: 720px){
       font-size: 2rem;
   }
+}
+
+& p {
+  font-size: 1.3rem;
+  color: #585858;
+
+  @media screen and (max-width: 720px){
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
   }
+}
 
-  & p {
-    font-size: 1.3rem;
-    color: #585858;
+& .article-intro {
+  margin-bottom: 100px;
+  
+  & .article-intro-img {
+    display: flex;
+    justify-content: space-around;
+
+    & .galaxy-img {
+  
+      @media screen and (max-width: 720px){
+        display: none;
+      }
+    }
   }
+  
+  & img {
+    margin-top: 30px;
+    height: 252px;
 
-  & .article-intro {
-    margin-bottom: 100px;
-
-    & .article-intro-img {
-      display: flex;
-      justify-content: space-around;
+    @media screen and (max-width: 720px){
+      width: 100%;
+      height: auto;
     }
+    
 
-    & img {
-      margin-top: 30px;
-      height: 252px;
-    }
-
+  }
+  
     & p {
       padding: 30px 0;
     }
@@ -57,6 +76,11 @@
     & h3 {
       font-size: 3.5rem;
       margin-top: 50px;
+
+      @media screen and (max-width: 720px){
+        font-size: 1.5rem;
+      }
+      
     }
 
     & .article-content-1 {
@@ -71,23 +95,49 @@
         "aj ji"
         "vi av";
 
+        @media screen and (max-width: 720px){
+          display: block;
+          margin-top: 40px;
+        }
+
       & .article-jupiter {
         grid-area: aj;
-      }
 
+      }
+      
       & .jupiter-img {
         grid-area: ji;
         margin-left: 80px;
+        
+        @media screen and (max-width: 720px){
+          margin-left: 0;
+          margin-top: 40px;
+        }
         & img {
           width: 450px;
+          @media screen and (max-width: 720px){
+            width: 100%;
+          }
         }
       }
 
+      & .article-venus {
+        @media screen and (max-width: 720px){
+          margin-top: 40px;
+        }
+      }
+      
       & .venus-img {
         grid-area: vi;
         width: 600px;
+        @media screen and (max-width: 720px){
+          margin-top: 40px;
+        }
         & img {
           width: 450px;
+          @media screen and (max-width: 720px){
+            width: 50%;
+          }
         }
       }
       & .article-venus {
@@ -107,14 +157,35 @@
         "si as"
         "ac ac";
 
+        @media screen and (max-width: 720px){
+          display: block;;
+          margin-top: 40px;
+        }
+
       & .article-ganymede {
         grid-area: ag;
         width: 110%;
+        @media screen and (max-width: 720px){
+          width: 100%;
+        }
       }
       & .ganymede-earth-img {
         grid-area: gi;
         padding-left: 100px;
         height: 305px;
+
+        @media screen and (max-width: 720px){
+          margin-top: 40px;
+          padding-left: 0;
+          height: auto;
+        }
+
+        & img {
+          @media screen and (max-width: 720px){
+            width: 100%;
+          }
+        }
+
       }
       & .article-saturne {
         grid-area: as;
@@ -125,11 +196,19 @@
         padding-top: 50px;
         & img {
           width: 600px;
+
+          @media screen and (max-width: 720px){
+            width: 100%;
+          }
         }
       }
       & .article-conclusion {
         grid-area: ac;
         height: 200px;
+
+        @media screen and (max-width: 720px){
+          margin-top: 40px;
+        }
       }
     }
   }

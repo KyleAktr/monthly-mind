@@ -292,6 +292,12 @@ html {
   font-size: 1.3rem;
   color: #585858;
 }
+@media screen and (max-width: 720px) {
+  .article p {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+}
 .article .article-intro {
   margin-bottom: 100px;
 }
@@ -299,9 +305,20 @@ html {
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 720px) {
+  .article .article-intro .article-intro-img .galaxy-img {
+    display: none;
+  }
+}
 .article .article-intro img {
   margin-top: 30px;
   height: 252px;
+}
+@media screen and (max-width: 720px) {
+  .article .article-intro img {
+    width: 100%;
+    height: auto;
+  }
 }
 .article .article-intro p {
   padding: 30px 0;
@@ -309,6 +326,11 @@ html {
 .article .article-content h3 {
   font-size: 3.5rem;
   margin-top: 50px;
+}
+@media screen and (max-width: 720px) {
+  .article .article-content h3 {
+    font-size: 1.5rem;
+  }
 }
 .article .article-content .article-content-1 {
   margin-top: 90px;
@@ -320,6 +342,12 @@ html {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "aj ji" "vi av";
 }
+@media screen and (max-width: 720px) {
+  .article .article-content .article-content-1 {
+    display: block;
+    margin-top: 40px;
+  }
+}
 .article .article-content .article-content-1 .article-jupiter {
   grid-area: aj;
 }
@@ -327,15 +355,41 @@ html {
   grid-area: ji;
   margin-left: 80px;
 }
+@media screen and (max-width: 720px) {
+  .article .article-content .article-content-1 .jupiter-img {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
 .article .article-content .article-content-1 .jupiter-img img {
   width: 450px;
+}
+@media screen and (max-width: 720px) {
+  .article .article-content .article-content-1 .jupiter-img img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .article .article-content .article-content-1 .article-venus {
+    margin-top: 40px;
+  }
 }
 .article .article-content .article-content-1 .venus-img {
   grid-area: vi;
   width: 600px;
 }
+@media screen and (max-width: 720px) {
+  .article .article-content .article-content-1 .venus-img {
+    margin-top: 40px;
+  }
+}
 .article .article-content .article-content-1 .venus-img img {
   width: 450px;
+}
+@media screen and (max-width: 720px) {
+  .article .article-content .article-content-1 .venus-img img {
+    width: 50%;
+  }
 }
 .article .article-content .article-content-1 .article-venus {
   grid-area: av;
@@ -349,14 +403,37 @@ html {
   grid-auto-rows: minmax(auto, 1fr);
   grid-template-areas: "ag gi" "si as" "ac ac";
 }
+@media screen and (max-width: 720px) {
+  .article .article-content .article-content-2 {
+    display: block;
+    margin-top: 40px;
+  }
+}
 .article .article-content .article-content-2 .article-ganymede {
   grid-area: ag;
   width: 110%;
+}
+@media screen and (max-width: 720px) {
+  .article .article-content .article-content-2 .article-ganymede {
+    width: 100%;
+  }
 }
 .article .article-content .article-content-2 .ganymede-earth-img {
   grid-area: gi;
   padding-left: 100px;
   height: 305px;
+}
+@media screen and (max-width: 720px) {
+  .article .article-content .article-content-2 .ganymede-earth-img {
+    margin-top: 40px;
+    padding-left: 0;
+    height: auto;
+  }
+}
+@media screen and (max-width: 720px) {
+  .article .article-content .article-content-2 .ganymede-earth-img img {
+    width: 100%;
+  }
 }
 .article .article-content .article-content-2 .article-saturne {
   grid-area: as;
@@ -369,18 +446,39 @@ html {
 .article .article-content .article-content-2 .saturne-img img {
   width: 600px;
 }
+@media screen and (max-width: 720px) {
+  .article .article-content .article-content-2 .saturne-img img {
+    width: 100%;
+  }
+}
 .article .article-content .article-content-2 .article-conclusion {
   grid-area: ac;
   height: 200px;
+}
+@media screen and (max-width: 720px) {
+  .article .article-content .article-content-2 .article-conclusion {
+    margin-top: 40px;
+  }
 }
 
 .suggestions {
   height: 70vh;
 }
+@media screen and (max-width: 720px) {
+  .suggestions {
+    padding-top: 100px;
+  }
+}
 .suggestions h2 {
   margin-top: 150px;
   font-size: 3.5rem;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 720px) {
+  .suggestions h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 .suggestions p {
   text-align: center;
@@ -390,6 +488,11 @@ html {
   color: #585858;
   letter-spacing: 1px;
 }
+@media screen and (max-width: 720px) {
+  .suggestions p {
+    width: 80%;
+  }
+}
 .suggestions input {
   margin-top: 50px;
   width: 700px;
@@ -398,6 +501,12 @@ html {
   text-align: center;
   border: 1 px solid black;
   letter-spacing: 1px;
+}
+@media screen and (max-width: 720px) {
+  .suggestions input {
+    width: 300px;
+    height: 30px;
+  }
 }
 .suggestions button {
   margin-top: 50px;
@@ -409,4 +518,11 @@ html {
   cursor: pointer;
   color: #909090;
   background: #222222;
+}
+@media screen and (max-width: 720px) {
+  .suggestions button {
+    font-size: 1rem;
+    height: 40px;
+    margin-bottom: 100px;
+  }
 }/*# sourceMappingURL=index.css.map */
