@@ -25,6 +25,7 @@ const Article = () => {
             <div className="article-intro-img">
               <img src={Galaxy} alt="image de notre système solaire" />
               <img
+                className="galaxy-img"
                 src={Spaceman}
                 alt="image d'un astronaute près de la terre"
               />
@@ -49,10 +50,6 @@ const Article = () => {
                 />
                 <p>Jupiter et sa tâche rouge</p>
               </div>
-              <div className="venus-img">
-                <img src={Venus} alt="image de Venus" />
-                <p>Vénus, "la soeur de la Terre"</p>
-              </div>
               <p className="article-venus">
                 Vénus, surnommée "la sœur de la Terre," partage des
                 caractéristiques intrigantes avec notre planète, notamment une
@@ -63,6 +60,10 @@ const Article = () => {
                 vents supersoniques et ses nuages d'acide sulfurique ajoutent à
                 son mystère.
               </p>
+              <div className="venus-img">
+                <img src={Venus} alt="image de Venus" />
+                <p>Vénus, "la soeur de la Terre"</p>
+              </div>
             </div>
             <h3>Lunes et Anneaux Énigmatiques</h3>
             <div className="article-content-2">
