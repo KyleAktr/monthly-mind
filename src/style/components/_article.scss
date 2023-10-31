@@ -48,10 +48,13 @@
   
   & img {
     margin-top: 30px;
-    height: 252px;
 
     @media screen and (max-width: 720px){
       width: 100%;
+      height: auto;
+    }
+    @media screen and (min-width: 721px){
+      width: 45%;
       height: auto;
     }
     
@@ -77,7 +80,7 @@
       font-size: 3.5rem;
       margin-top: 50px;
 
-      @media screen and (max-width: 720px){
+      @media screen and (max-width: 1024px){
         font-size: 1.5rem;
       }
       
@@ -95,13 +98,16 @@
         "aj ji"
         "vi av";
 
-        @media screen and (max-width: 720px){
+        @media screen and (max-width: 1024px){
           display: block;
           margin-top: 40px;
         }
-
-      & .article-jupiter {
-        grid-area: aj;
+        
+        & .article-jupiter {
+          grid-area: aj;
+          @media screen and (max-width: 1400px){
+            width: 70%;
+          }
 
       }
       
@@ -109,20 +115,23 @@
         grid-area: ji;
         margin-left: 80px;
         
-        @media screen and (max-width: 720px){
+        @media screen and (max-width: 1024px){
           margin-left: 0;
           margin-top: 40px;
         }
+        @media screen and (max-width: 1400px){
+          margin-left: 0;
+        }
         & img {
           width: 450px;
-          @media screen and (max-width: 720px){
+          @media screen and (max-width: 1024px){
             width: 100%;
           }
         }
       }
 
       & .article-venus {
-        @media screen and (max-width: 720px){
+        @media screen and (max-width: 1024px){
           margin-top: 40px;
         }
       }
@@ -130,18 +139,22 @@
       & .venus-img {
         grid-area: vi;
         width: 600px;
-        @media screen and (max-width: 720px){
+        @media screen and (max-width: 1024px){
           margin-top: 40px;
         }
         & img {
           width: 450px;
-          @media screen and (max-width: 720px){
+          @media screen and (max-width: 1024px){
             width: 50%;
           }
         }
       }
       & .article-venus {
         grid-area: av;
+        @media screen and (max-width: 1400px){
+          width: 90%;
+        }
+        
       }
     }
 
@@ -157,7 +170,7 @@
         "si as"
         "ac ac";
 
-        @media screen and (max-width: 720px){
+        @media screen and (max-width: 1024px){
           display: block;;
           margin-top: 40px;
         }
@@ -165,7 +178,10 @@
       & .article-ganymede {
         grid-area: ag;
         width: 110%;
-        @media screen and (max-width: 720px){
+        // @media screen and (max-width: 1024px){
+        //   width: 100%;
+        // }
+        @media screen and (max-width: 1400px){
           width: 100%;
         }
       }
@@ -174,15 +190,21 @@
         padding-left: 100px;
         height: 305px;
 
-        @media screen and (max-width: 720px){
+        @media screen and (max-width: 1024px){
           margin-top: 40px;
           padding-left: 0;
           height: auto;
+        }
+        @media screen and (max-width: 1400px){
+          padding-left: 0;
         }
 
         & img {
           @media screen and (max-width: 720px){
             width: 100%;
+          }
+          @media screen and (max-width: 1024px){
+            width: 60%;
           }
         }
 
@@ -190,6 +212,9 @@
       & .article-saturne {
         grid-area: as;
         padding-top: 50px;
+        @media screen and (max-width: 1400px){
+          width: 100%;
+        }
       }
       & .saturne-img {
         grid-area: si;
@@ -197,7 +222,10 @@
         & img {
           width: 600px;
 
-          @media screen and (max-width: 720px){
+          @media screen and (max-width: 1024px){
+            width: 100%;
+          }
+          @media screen and (max-width: 1400px){
             width: 100%;
           }
         }
@@ -206,8 +234,11 @@
         grid-area: ac;
         height: 200px;
 
-        @media screen and (max-width: 720px){
+        @media screen and (max-width: 1024px){
           margin-top: 40px;
+        }
+        @media screen and (max-width: 1400px){
+          width: 100%;
         }
       }
     }
