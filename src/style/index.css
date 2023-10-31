@@ -312,11 +312,16 @@ html {
 }
 .article .article-intro img {
   margin-top: 30px;
-  height: 252px;
 }
 @media screen and (max-width: 720px) {
   .article .article-intro img {
     width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 721px) {
+  .article .article-intro img {
+    width: 45%;
     height: auto;
   }
 }
@@ -327,7 +332,7 @@ html {
   font-size: 3.5rem;
   margin-top: 50px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .article .article-content h3 {
     font-size: 1.5rem;
   }
@@ -342,7 +347,7 @@ html {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "aj ji" "vi av";
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .article .article-content .article-content-1 {
     display: block;
     margin-top: 40px;
@@ -351,25 +356,35 @@ html {
 .article .article-content .article-content-1 .article-jupiter {
   grid-area: aj;
 }
+@media screen and (max-width: 1400px) {
+  .article .article-content .article-content-1 .article-jupiter {
+    width: 70%;
+  }
+}
 .article .article-content .article-content-1 .jupiter-img {
   grid-area: ji;
   margin-left: 80px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .article .article-content .article-content-1 .jupiter-img {
     margin-left: 0;
     margin-top: 40px;
   }
 }
+@media screen and (max-width: 1400px) {
+  .article .article-content .article-content-1 .jupiter-img {
+    margin-left: 0;
+  }
+}
 .article .article-content .article-content-1 .jupiter-img img {
   width: 450px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .article .article-content .article-content-1 .jupiter-img img {
     width: 100%;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .article .article-content .article-content-1 .article-venus {
     margin-top: 40px;
   }
@@ -378,7 +393,7 @@ html {
   grid-area: vi;
   width: 600px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .article .article-content .article-content-1 .venus-img {
     margin-top: 40px;
   }
@@ -386,13 +401,18 @@ html {
 .article .article-content .article-content-1 .venus-img img {
   width: 450px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .article .article-content .article-content-1 .venus-img img {
     width: 50%;
   }
 }
 .article .article-content .article-content-1 .article-venus {
   grid-area: av;
+}
+@media screen and (max-width: 1400px) {
+  .article .article-content .article-content-1 .article-venus {
+    width: 90%;
+  }
 }
 .article .article-content .article-content-2 {
   margin-top: 90px;
@@ -403,7 +423,7 @@ html {
   grid-auto-rows: minmax(auto, 1fr);
   grid-template-areas: "ag gi" "si as" "ac ac";
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .article .article-content .article-content-2 {
     display: block;
     margin-top: 40px;
@@ -413,7 +433,7 @@ html {
   grid-area: ag;
   width: 110%;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1400px) {
   .article .article-content .article-content-2 .article-ganymede {
     width: 100%;
   }
@@ -423,11 +443,16 @@ html {
   padding-left: 100px;
   height: 305px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .article .article-content .article-content-2 .ganymede-earth-img {
     margin-top: 40px;
     padding-left: 0;
     height: auto;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .article .article-content .article-content-2 .ganymede-earth-img {
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 720px) {
@@ -435,9 +460,19 @@ html {
     width: 100%;
   }
 }
+@media screen and (max-width: 1024px) {
+  .article .article-content .article-content-2 .ganymede-earth-img img {
+    width: 60%;
+  }
+}
 .article .article-content .article-content-2 .article-saturne {
   grid-area: as;
   padding-top: 50px;
+}
+@media screen and (max-width: 1400px) {
+  .article .article-content .article-content-2 .article-saturne {
+    width: 100%;
+  }
 }
 .article .article-content .article-content-2 .saturne-img {
   grid-area: si;
@@ -446,7 +481,12 @@ html {
 .article .article-content .article-content-2 .saturne-img img {
   width: 600px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
+  .article .article-content .article-content-2 .saturne-img img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1400px) {
   .article .article-content .article-content-2 .saturne-img img {
     width: 100%;
   }
@@ -455,9 +495,14 @@ html {
   grid-area: ac;
   height: 200px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   .article .article-content .article-content-2 .article-conclusion {
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .article .article-content .article-content-2 .article-conclusion {
+    width: 100%;
   }
 }
 
@@ -478,6 +523,14 @@ html {
   .suggestions h2 {
     font-size: 2rem;
     text-align: center;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .suggestions h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 200px;
   }
 }
 .suggestions p {
